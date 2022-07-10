@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串简单加密</title>
+</head>
+
+<body>
+    <div>
+        <h4>密钥</h4>
+        <input id="t1" type="number" style="width: 200px; height: 18px">
+        <h4>明文</h4>
+        <textarea id="t2" rows="6" cols="30"></textarea>
+        <button onclick="encode()">编码</button>
+        <h4>密文</h4>
+        <textarea id="t3" rows="6" cols="30"></textarea>
+        <button onclick="decode()">解码</button>
+    </div>
+    <div>
+        <a href="https://wzw21.cn">回到首页</a>
+    </div>
+
+    <script lang="javascript">
+        function encode()
+        {
+            var offset = Number(document.getElementById("t1").value);
+            var str = document.getElementById("t2").value;
+            var ret = "";
+            for(var i=0; i<str.length; i++)
+            {
+                var c = str.charCodeAt(i);
+                ret += String.fromCharCode(c + offset);
+            }
+           document.getElementById("t3").value = ret;
+        };
+        function decode()
+        {
+            var offset = Number(document.getElementById("t1").value);
+            var str = document.getElementById("t3").value;
+            var ret = "";
+            for(var i=0; i<str.length; i++)
+            {
+                var c = str.charCodeAt(i);
+                ret += String.fromCharCode(c - offset);
+            }
+            document.getElementById("t2").value = ret;
+        };
+    </script>
+
+</body>
+
+</html>

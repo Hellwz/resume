@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Source+Sans+Pro:400,400i" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 密码部分 -->
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript">
+        function password() 
+        {   
+            var cnt = 1; //可输入3次
+            var pswd = prompt("请输入密码\n（密码提示：本人小学时上学和放学乘坐公交车线路编号的乘积）","");   
+            while (cnt < 3) 
+            {   
+                if (!pswd) history.go(-1); //返回上一页
+                if (hex_md5(pswd) == "0c215f194276000be6a6df6528067151") 
+                {
+                    alert('密码正确，欢迎！');   
+                    break;   
+                }   
+                cnt += 1;   
+                pswd = prompt("密码错误！请重新输入");   
+            }   
+            if (hex_md5(pswd) != "0c215f194276000be6a6df6528067151" & cnt ==3) history.go(-1);   
+            window.pswd = pswd //全局变量
+        }   
+        password();   
+    </script>
+
+    <!-- 简历部分 -->
+    <div class="page">
+
+        <div class="section row">
+            <h1 class="col"><span style="font-weight:700">WZW</span></h1>
+            <div class="contact-info col-right">
+                <div><p>wzw@mail.ccom.edu.cn</p></div>
+                <div><a href="https://wzw21.cn">https://wzw21.cn</a></div>
+            </div>
+        </div>
+
+        <div class="section row">
+            <h2 name="content" class="col">澵謎褫巢</h2>
+            <div class="section-text col-right">
+                <h3 name="content">墉掊ꉏ墬旂ꂾ</h3>
+                <div class="row">
+                    <div name="content" class="col">ꉏ墬外桁烖譙塪ꉏ墬娽櫋萭泜ઋ花捇।嵳夈掃旂誰幤払寗॥</div>
+                    <div name="content" class="col-right">઎ઌ઎ઍઊઌક੼ઉ੼豏夦</div>
+                </div>
+                <ul class="desc">
+                    <li name="content">腔寏陚葧ॶ硍椂罻汬瑽懧।ઍઌઌ२બધ઱॥ꉏ墬驶阖।કએ॥ꉏ墬捌旂।કઍ॥</li>
+                </ul>
+            </div>
+            <div class="section-text col-right">
+                <h3 name="content">愷根掃旂</h3>
+                <div class="row">
+                    <div name="content" class="col">闽藳熖萭旂塪泜熋ઋ熈萭ઋ闽藳熖旂ꂾ</div>
+                    <div name="content" class="col-right">઎ઌઍઓઊઌક੼ઉ੼઎ઌ઎ઍઊઌ</div>
+                </div>
+                <ul class="desc">
+                    <li name="content">ણબઝॶએઊઔઑઋઐ२峼熟棏憣屢ॶકઍઊ઎ઍ२襘幤淮幩塯塶岩઎ઁ</li>
+                    <li name="content">腔寏陚葧ॶꔴ褃陉鑜葧棫阚闽ઉટ陉鑜।ક઒॥ટઇઇ।કઑ॥皣襲陉鑜葧棫阚闽।કઓ॥濌淊褯燠塪藳眱屢燬੼।કક॥੼樊熖蝗褻塪渁帿泜熋।ઍઌઌ॥੼濌淊棯蝗褻巻繢।કઑ॥襲阭巻繢।કઐ॥闽藳熖覭褸।કઑ॥</li>
+                    <li name="content">洡套੼繉鿛।઎ઌઍઓઊકઉ઎ઌ઎ઍઊ઒॥旂ꂾ旂罻奶濣賖魄魄鿛ઋ幤徍ꁻꁻ鿛ઋ豺颤ꁻꁻ鿛।઎ઌઍઔઊ઒ઉ઎ઌઍકઊક॥</li>
+                </ul>
+            </div>
+            <div class="section-text col-right">
+                <h3 name="content">઱ૈ૏ૐુ૎੼઱૊ૅ૒ુ૎૏ૅૐ૕੼઄઱ધઅ</h3>
+                <div class="row">
+                    <div name="content" class="col">ઝ૎ૐૅૂૅિૅઽૈ੼થ૊ૐુૈૈૅૃુ૊િુ੼ઽ૊ી੼થ૊ૐુ૎૊ુૐ੼ોૂ੼રૄૅ૊ૃ૏੼ઋ੼ય૑ૉૉુ૎੼યિૄોોૈ</div>
+                    <div name="content" class="col-right">઎ઌઍકઊઌઔ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section row">
+            <h2 name="content" class="col">趿铥掲ꋕ</h2>
+            <div class="section-text col-right">
+                <ul>
+                    <li name="content">慙昒掲旂鰭।襘幤淮幩塯塶薈塜੼ઍઋએઐઌ॥</li>
+                    <li name="content">墉慙闽藳熖旂奶।ટટઢ॥寄慙奴萜掃旂罻掲</li>
+                    <li name="content">愷根掃旂⩸皣烖熆燁⩹屷瀌掲旂鰭२屴皔ꧠ扖鰭奶掲旂鰭२愷根掃旂襘幤塜薥掲旂鰭</li>
+                    <li name="content">愷根腝奴萜瘱塶罻२愷根掃旂奴萜瘱塶罻棎魄㩝奴萜旂罻棎魄薥</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section row">
+            <h2 name="content" class="col">ꋕ腊褫巢</h2>
+            <div class="section-text col-right">
+                <ul>
+                    <li name="content">㩦扖壪牭路瞚廨硍椂旂墼胠烖譙懟憚浚帲屢蛗晫駂㩧੼牽褃掃屷ꋕ腊੼靻靿外੼奴萜褯ꋴ</li>
+                    <li name="content">㩦桤罻皣ઉઉ扖壪濌淊浲淴胠ꔴ牽ꋕ腊姷ꅜ娽櫋棏幌㩧੼腝褃掃屷ꋕ腊੼汬庴</li>
+                    <li name="content">㩦懟憚旹ઉઉ懟憚慚嬫阢岇屢蛗ઝ૊ી૎ોૅી੼ઝબબ㩧੼愷根掃旂駋奒阚闽掃鞷塜薥掲।薈塜幩॥</li>
+                    <li name="content">㩦ઝથ槍墬ઉઉ扖壪硍椂旂墼胠鐢ꋭ豆崄鮩墬蝗褻㩧⩸壮誰覭ઇ⩹屷瀌屷塶掃鞷牽褃壨薥掲੼薈塜汬庴</li>
+                    <li name="content">㩦ઠુુૌ઩ોૈુિ૑ૈુ੼烖譙跋糅駡崅艰席棏幌㩧੼⩸壮誰覭ઇ⩹屷瀌屷塶掃鞷牽褃鼸掲੼泜熋靻靿外</li>
+                    <li name="content">㩦捶峻譙沧崛渃岒瀌墬惄㩧੼晭截墧捌ଓ絈蔧巻罻ꉏ墬斿੼ઢૅ૊ઽૈૅ૏ૐ੼ઝ૓ઽ૎ી</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section row">
+            <h2 name="content" class="col">蔺鞷踓掲</h2>
+            <div class="section-text col-right">
+                <ul>
+                    <li name="content">઎ઌઍક੼ટટઢ੼ટટયબ੼掃旂罻闽藳熖蝗褻塪葧棫阚闽蔺鞷੼寄慙檗小鞷੼鼸掲२鏛嶳鞷嶖੼鰭掲</li>
+                    <li name="content">઎ઌઍઔ੼輹狁燋੼ટઋટઇઇ੼葧棫阚闽掃鞷掃旂ઝ褠੼寄慙檗小鞷੼壨薥掲२愷根鞷嶖੼塜薥掲।墀畽॥</li>
+                    <li name="content">઎ઌ઎ઍ੼⩸旂奶燋⩹ꔴ牽黾纐掃鞷榕徍褠੼愷根腝੼塥薥掲</li>
+                    <li name="content">઎ઌઍઔ㩝઎ઌઍક੼愷根掃旂ઝટ઩葧棫阚闽蔺鞷੼齒掲।墀畽॥</li>
+                    <li name="content">઎ઌઍ઒੼પફથબ੼愷根腝測ꔴ褠੼塜薥掲</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section row">
+            <h2 name="content" class="col">譙峷薥褃</h2>
+            <div class="section-text col-right">
+                <ul>
+                    <li name="content">赍陉譙峷ॶ愷褃੼ઑકઍ屢੼寉褃੼ઑએઑ屢</li>
+                    <li name="content">ટટઢ੼ટયબ੼闽藳熖駋奒譙峷阀阝੼ઐઌઌ屢।岩ઍઁ॥</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section row">
+            <h2 name="content" class="col">旂熋濣蔼</h2>
+            <div class="section-text col-right">
+                <ul>
+                    <li name="content">㩦ટપબ઩੼ઠઽૐઽાઽ૏ુॶ塜墆羄壪闽藳ꉏ墬旂胠墉慙癭瀫声捌陟楫ꉏ墬濌淊棯㩧२ટય઩ર઎ઌ઎ઍ</li>
+                    <li name="content">㩦ꉏꋭꉏ墬塪闽藳熖胠夀釩⩰⩰ꉏꋭꉏ墬泜熋।塧॥㩧薈壨蔼</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script lang="javascript">
+        function decode(str, offset)
+        {
+            var ret = "";
+            for(var i=0; i<str.length; i++)
+            {
+                var c = str.charCodeAt(i);
+                ret += String.fromCharCode(c - offset);
+            }
+            return ret;
+        };
+        
+        let arrp = document.getElementsByName("content");
+        for (let i=0; i<arrp.length; i++)
+        {
+            arrp[i].innerHTML = decode(arrp[i].innerHTML, pswd)
+        }
+    </script>
+
+</body>
+
+</html>
